@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="300dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="#B7B1F2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_marginStart="2dp"
+            android:text="Внеси го зборот на македонски и на англиски, па притисни на копчето за да го внесиш во речникот."
+            android:textAlignment="textStart"
+            android:textSize="20sp" />
+
+        <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="48dp"
+           android:orientation="horizontal"
+           android:layout_gravity="left|center">
+        <EditText
+            android:id="@+id/mkd"
+            android:inputType="text|textNoSuggestions|textCapSentences"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:maxWidth="64dp"
+            android:layout_gravity="left|center"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:hint="Македонски" />
+
+        <EditText
+            android:inputType="text|textNoSuggestions|textCapSentences"
+            android:id="@+id/ang"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:maxWidth="64dp"
+            android:layout_weight="1"
+            android:layout_gravity="right|center"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="5dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:hint="Англиски" />
+       </LinearLayout>
+
+        <Button
+            android:id="@+id/ins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#7C74B6"
+            android:text="Внеси во речник"
+            app:cornerRadius="8dp" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

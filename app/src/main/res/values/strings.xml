@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">"practice"</string>
+    <string name="edit">Edit</string>
+    <string name="title">Favorite Twitter Searches</string>
+    <string name="edit1">Enter Twitter search query here</string>
+    <string name="edit2">Tag your query</string>
+    <string name="save">Save</string>
+    <string name="title2">Tagged Searches</string>
+    <string name="AFP">AndroidFP</string>
+    <string name="d">Deitel</string>
+    <string name="JH">JavaHTP</string>
+    <string name="IF">iPhoneFP</string>
+    <string name="JF">JavaFP</string>
+    <string name="G">Google</string>
+    <string name="HTTP">HTTP</string>
+    <string name="CSS">CSS</string>
+    <string name="Cpp">C++</string>
+    <string name="java">Java</string>
+    <string name="Tech">Technology</string>
+    <string name="Dyn">Dynamic</string>
+    <string name="Ph">Phone</string>
+    <string name="cleartags">Clear Tags</string>
+</resources>

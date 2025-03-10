@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9C46A"
+    android:backgroundTint="#E9C46A"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F6F0F0"
+        android:orientation="vertical">
+
+        <!-- Title TextView -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#B7B1F2"
+            android:gravity="center"
+            android:outlineProvider="none"
+            android:padding="6dp"
+            android:text="Речник"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <!-- Add Button -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/add"
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginEnd="60dp"
+                android:layout_weight="1"
+                android:backgroundTint="#A19BD9"
+                android:text="Додај"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:cornerRadius="8dp" />
+        </LinearLayout>
+        <!-- Search EditText -->
+        <EditText
+            android:id="@+id/searchEditText"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/edittextoutline"
+            android:gravity="start|center"
+            android:hint="Пребарај.."
+            android:importantForAutofill="no"
+            android:inputType="text|textNoSuggestions|textCapSentences"
+            android:maxHeight="40dp"
+            android:outlineAmbientShadowColor="#8A0A0A"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp" />
+        <!-- ListView for displaying words -->
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="640dp"
+            android:layout_marginTop="5dp"
+            android:choiceMode="singleChoice"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="0.5dp"
+            android:padding="16dp" />
+    <!-- Bottom Buttons Section -->
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/clearFileButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="1"
+            android:backgroundTint="#A19BD9"
+            android:text="Нов речник"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:cornerRadius="8dp" />
+        <Button
+            android:id="@+id/deleteItemButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#A19BD9"
+            android:text="Избриши"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:cornerRadius="8dp" />
+    </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
